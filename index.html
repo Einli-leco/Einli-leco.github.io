@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>李丞弘宇 · 游戏策划作品集</title>
+<style>
+  :root {
+    --blue: #0059FF;
+    --dark: #1A1A1A;
+    --gray: #666;
+    --light: #F5F5F5;
+    --white: #FFF;
+    --card: #FAFAFA;
+    --radius: 12px;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, "Microsoft YaHei", "PingFang SC", sans-serif;
+    color: var(--dark);
+    background: #FFF;
+    line-height: 1.7;
+    font-size: 15px;
+  }
+  .container { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+
+  /* Header */
+  header {
+    padding: 48px 0 32px;
+    border-bottom: 1px solid #EEE;
+  }
+  .name { font-size: 28px; font-weight: 700; color: var(--blue); }
+  .role { font-size: 16px; color: var(--gray); margin-top: 4px; }
+  .meta { display: flex; gap: 20px; margin-top: 12px; font-size: 14px; color: var(--gray); flex-wrap: wrap; }
+  .meta span::before { content: '·'; margin-right: 4px; }
+
+  /* Tag */
+  .tag-row { display: flex; gap: 8px; margin-top: 16px; flex-wrap: wrap; }
+  .tag {
+    font-size: 12px; padding: 3px 10px;
+    background: #EEF3FF; color: var(--blue); border-radius: 20px;
+    font-weight: 500;
+  }
+
+  /* Section */
+  section { padding: 36px 0; }
+  .section-title {
+    font-size: 18px; font-weight: 700; color: var(--blue);
+    padding-left: 12px; border-left: 3px solid var(--blue);
+    margin-bottom: 20px;
+  }
+
+  /* Cards */
+  .card {
+    background: var(--card); border-radius: var(--radius);
+    padding: 24px; margin-bottom: 20px;
+    transition: transform 0.15s, box-shadow 0.15s;
+    border: 1px solid #EEE;
+  }
+  .card:hover { transform: translateY(-2px); box-shadow: 0 4px 20px rgba(0,0,0,0.06); }
+  .card-title { font-size: 17px; font-weight: 700; margin-bottom: 4px; }
+  .card-meta { font-size: 13px; color: var(--gray); margin-bottom: 12px; }
+  .card-body { font-size: 14px; color: #333; }
+  .card-body p { margin-bottom: 6px; }
+  .card-body ul { padding-left: 16px; }
+  .card-body li { margin-bottom: 4px; font-size: 13.5px; }
+
+  /* Highlight box */
+  .highlight {
+    background: #EEF3FF; border: 1px solid #D0DEFF;
+    border-radius: 8px; padding: 14px 18px;
+    margin-top: 16px; font-size: 13px; color: var(--blue);
+    line-height: 1.6;
+  }
+
+  /* Screenshot placeholder */
+  .screenshot-placeholder {
+    background: #DDD; border-radius: 8px;
+    height: 160px; display: flex; align-items: center;
+    justify-content: center; color: #999; font-size: 14px;
+    margin-top: 12px;
+  }
+
+  /* Footer */
+  footer {
+    border-top: 1px solid #EEE;
+    padding: 32px 0 48px;
+    text-align: center;
+    font-size: 13px; color: #999;
+  }
+  footer .contact { color: var(--blue); font-weight: 500; }
+
+  /* Responsive */
+  @media (max-width: 600px) {
+    .name { font-size: 24px; }
+    .card { padding: 18px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Header -->
+  <header>
+    <div class="name">李丞弘宇 Einli</div>
+    <div class="role">游戏策划（实习生） · 系统 / 数值方向</div>
+    <div class="meta">
+      <span>深圳大学 · 光学工程硕士（2027届）</span>
+      <span>189-1917-8182</span>
+      <span>1797498958@qq.com</span>
+    </div>
+    <div class="tag-row">
+      <span class="tag">无畏契约 1000h+</span>
+      <span class="tag">LOL 3500h+</span>
+      <span class="tag">Godot 4</span>
+      <span class="tag">Python数值建模</span>
+      <span class="tag">战棋设计</span>
+      <span class="tag">FPS设计分析</span>
+    </div>
+    <div class="highlight">
+      <strong>🔍 意向岗位：</strong>腾娱互动 · 光环工作室 · 无畏契约手游策划实习生<br>
+      跨专业背景：光学工程训练"从现象推导机制"的逆向思维，与游戏拆解、数值建模同一套能力栈。
+    </div>
+  </header>
+
+  <!-- Project 1 -->
+  <section>
+    <div class="section-title">作品一 · 无畏契约手游策划拆解研究</div>
+    <div class="card">
+      <div class="card-title">从端游到手游：无畏契约移动端策划拆解</div>
+      <div class="card-meta">2026.06 · 个人研究</div>
+      <div class="card-body">
+        <p><strong>研究范围：</strong></p>
+        <ul>
+          <li>品牌定位对比：无畏契约 vs CS vs 守望先锋 vs APEX</li>
+          <li>英雄差异化：信息获取 / 空间控制 / 突破切入 / 功能辅助的分类框架</li>
+          <li>移动端适配：操控输入（急停保留+辅助）、屏幕信息密度（UI重构）、对局节奏（时长缩短）</li>
+          <li>原创英雄设计：Verx·沈蔚，声波探测型信息位，完整技能稿（被动+Q+E+X）</li>
+        </ul>
+        <p style="margin-top:10px;"><strong>核心发现：</strong>手游不是"缩小版"，而是"减法+补偿"。保留竞技核心机制（急停），同时在操作辅助、UI密度、对局时长上做减法适配。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project 2 -->
+  <section>
+    <div class="section-title">作品二 · 原创英雄设计</div>
+    <div class="card">
+      <div class="card-title">Verx·沈蔚 —— 声波探测型信息位</div>
+      <div class="card-meta">2026.06 · 为无畏契约手游设计</div>
+      <div class="card-body">
+        <p><strong>设计定位：</strong>主动信息获取型，填补现有信息位（Sova/Cypher偏防守）的空白。</p>
+        <p><strong>技能框架：</strong></p>
+        <ul>
+          <li><strong>被动 · 回声感知：</strong>靠近墙壁时，可感知墙后一定范围内移动的敌人（模糊位置，非精确）</li>
+          <li><strong>Q · 声呐脉冲：</strong>发射一道声波脉冲，沿墙体传播，命中敌人造成短暂标记</li>
+          <li><strong>E · 共振屏障：</strong>部署一个声波屏障，穿过屏障的敌人会产生持续声音提示</li>
+          <li><strong>X · 全频扫描：</strong>大范围声波爆发，短时间内标记所有移动中的敌人位置</li>
+        </ul>
+        <p style="margin-top:10px;"><strong>设计审查：</strong>所有技能都有视觉/听觉反制提示（蓝色波纹效果、可被墙体阻挡），符合无畏契约"信息对称原则"。每个信息获取手段都有对应的规避空间。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project 3 -->
+  <section>
+    <div class="section-title">作品三 · RAP Flow 战棋Demo</div>
+    <div class="card">
+      <div class="card-title">RAP Flow 回合制战术Demo（可运行原型）</div>
+      <div class="card-meta">2026.04 - 2026.06 · Godot 4 + GDScript · 个人独立开发</div>
+      <div class="card-body">
+        <p><strong>项目概述：</strong>将自研RAP Flow战斗机制改进方案从设计文档落地为可运行游戏。</p>
+        <ul>
+          <li>信号驱动架构管理RAP资源系统</li>
+          <li>四原型圣武角色模型（影刃/守御/裁序/圣武）</li>
+          <li>三种差异化敌方AI</li>
+          <li>Overflow / Response / Break 三机制完整实现</li>
+          <li>程序化生成中世纪骑士试炼场（沙砾纹理、火炬动画、刀光轨迹、浮动伤害数字）</li>
+          <li>PCM16程序化音效，零外部依赖</li>
+        </ul>
+        <div class="screenshot-placeholder">📸 Demo截图 · 面试时可共享屏幕演示</div>
+        <p style="margin-top:10px;font-size:13px;color:var(--gray);">
+          <strong>设计决策亮点：</strong>选择回合制网格战术而非即时制——战棋品类与RAP点数系统的"每回合资源分配"设计本质天然契合。Break机制以"概率返还"一个规则打破"每回合用满RAP"的最优解——是典型的"减法式加法"。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project 4 -->
+  <section>
+    <div class="section-title">作品四 · 数值建模与系统分析</div>
+    <div class="card">
+      <div class="card-title">风色幻想系列 · 系统逆向与数值重构</div>
+      <div class="card-meta">2024.09 - 2025.06</div>
+      <div class="card-body">
+        <ul>
+          <li><strong>战斗系统逆向：</strong>还原RAP行动点数消耗决策模型（移动/攻击/技能），揭示从固定值到百分比的迭代设计逻辑</li>
+          <li><strong>数值建模：</strong>三维战斗公式：6×6元素克制矩阵 × 方向加成 × 地形高低差，Python蒙特卡洛1000回合/场景×5验证DPS期望</li>
+          <li><strong>系统分析：</strong>魔兽合成系统（配方制+技能继承的长线养成）、成长系统（熟练度+刻纹双轨低耦合高自由度定位）</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project 5 -->
+  <section>
+    <div class="section-title">作品五 · 竞技游戏商业化分析</div>
+    <div class="card">
+      <div class="card-title">英雄联盟 · 玩法循环与商业化分析</div>
+      <div class="card-meta">2026.02 - 2026.03</div>
+      <div class="card-body">
+        <ul>
+          <li>玩法拆解：召唤师峡谷/极地大乱斗/无限火力模式的玩法循环结构图</li>
+          <li>BP分析：建立ban/pick/应对三阶段框架，以T1 vs LNG(2023)验证</li>
+          <li>商业化：低价抽奖+史诗皮肤定价策略，分析"消费平权vs炫耀性消费"博弈</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>李丞弘宇 · 深圳大学 · 光学工程硕士（2027届）</p>
+    <p class="contact">1797498958@qq.com · 189-1917-8182</p>
+    <p style="margin-top:8px;">感谢您的时间。期待交流。</p>
+  </footer>
+
+</div>
+
+</body>
+</html>
